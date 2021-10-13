@@ -1,0 +1,34 @@
+body{
+
+}
+.container{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    flex-direction: column;
+    justify-content: center;
+}
+span{
+    padding: 1rem 0rem;
+}
+#svar{
+    display: flex;
+    flex-direction: column;
+    margin: 0rem;
+}
+ul{
+    margin: 0rem;
+}
+#removeBtn{
+    display: inline-block;
+  
+}
+#liDiv{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+li{
+   margin: 1rem;
+   list-style-type: none;
+}

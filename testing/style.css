@@ -205,13 +205,13 @@ a {
     box-shadow: 0 0 10px #ccc;
     border-radius: .6rem;
     display: flex;
-    width: 83vh;
+    max-width: 83vh;
     margin-right: 3rem;
 }
 .last-container{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+  
 }
 .basic-info p,
 .standard-info p,
