@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>UFWEBB</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- header -->
+        <div class="header">
+            <a href="" class="logo">UFWEBB</a>
+            <div class="header-nav">
+                <button class="btn" onclick="scrollContact()">KONTAKTA OSS</button>
+                <button class="btn" onclick="scrollPackets()">PAKETEN</button>
+            </div>
+        </div>
+        <!-- hero -->
+        <div class="hero">
+            <div class="hero-text">
+                <h1>Vi gör din webbplats åt dig!</h1>
+                <p>vi på ufwebb designar, kodar och hostar webbplatser åt uf företag för ett bra pris. välj ett paket
+                    och sedan kan du kontakta oss (läs mer om de längre ner), vi tar erat uf-företag till nästa nivå</p>
+                <a id="more" onclick="scrollReadMore()">Läs mer nedan</a>
+            </div>
+            <img src="./svg-img/undraw_building_websites_i78t.svg" alt="" class="svg">
+        </div>
+        <!-- content -->
+        <div class="content-header">
+            <h2>Hur går det till</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="content-main">
+            <img src="./svg-img/undraw_Meeting_re_i53h (1).svg" alt="">
+            <div class="content-text">
+                <span><span id="bold-span">1</span> - ni väljer ett <button class="btn" onclick="scrollPackets()">PAKET</button> och så bokar vi in
+                    ett möte</span>
+                <span><span id="bold-span">2</span> - Kontakta oss via <button class="btn" onclick="scrollContact()">MAIL</button> eller <button
+                        class="btn" onclick="scrollContact()">TELEFON</button></span>
+                <span><span id="bold-span">3</span> - vi skapar ett första utkast av webbplatsen och skickar till er</span>
+                <span><span id="bold-span">4</span> - ni ger response och kommer med ändringar om ni vill</span>
+                <span><span id="bold-span">5</span> - vi lanserar er webbplats (hela proccsen tar 1-2 veckor)</span>
+            </div>
+        </div>
+        <!-- PACKET -->
+        <div class="packet-header">
+            <h2>Våra olika paket</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="packets">
+            <div class="packet-basic">
+                <div class="basic-container">
+                    <button>REKOMENDERAD</button>
+                    <div class="basic-info">
+                        <span>599kr</span>
+                        <span>basic</span>
+                        <p>skräddarsydd och interaktiv webbplats</p>
+                    </div>
+                    <div class="last-container">
+                    <ul class="list">
+                        <li class="checklist">hosting av webbplats</li>
+                        <li class="checklist">design</li>
+                        <li class="checklist">ändringar görs via oss</li>
+                        <li class="checklist">interaktiv webbplats</li>
+                        <li class="checklist">gratis domän</li>
+                        <li class="checklist">kundtjänst</li>
+                    </ul>
+                    <div class="wrapper">
+                        <a class="button" href="./product-page.html">MER INFO</a>>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="packet-standard">
+                <div class="standard-container">
+                    <div class="standard-info">
+                        <span>2499kr</span>
+                        <span>exclusive</span>
+                        <p>en skräddarsydd e-handel som är interaktiv</p>
+                    </div>
+                    <div class="last-container">
+                    <ul class="list">
+                        <li class="checklist">hosting av webbplats</li>
+                        <li class="checklist">avancerad design</li>
+                        <li class="checklist">ändringar gör n själva</li>
+                        <li class="checklist">interaktiv webbplats</li>
+                        <li class="checklist">gratis domän</li>
+                        <li class="checklist">e-handel</li>
+                        <li class="checklist">prioreterad kundtjänst</li>
+                    </ul>
+                    <div class="wrapper-2">
+                        <a class="button" href="#">MER INFO</a>>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="packet-premium">
+                <div class="premium-container">
+                    <div class="premium-info">
+                        <span>1999kr</span>
+                        <span>standard</span>
+                        <p>skräddarsydd och interaktiv webbplats
+                        </p>
+                    </div>
+                    <div class="last-container">
+                    <ul class="list">
+                        <li class="checklist">hosting av webbplats</li>
+                        <li class="checklist">avancerad design</li>
+                        <li class="checklist">ändringar gör ni själva</li>
+                        <li class="checklist">interaktiv webbplats</li>
+                        <li class="checklist">gratis domän</li>
+                        <li class="checklist">prioreterad kundtjänst</li>
+                    </ul>
+                        <div class="wrapper-2">
+                            <a class="button" href="#">MER INFO</a>>
+                        </div>
+                        </div>
+                        <svg style="visibility: hidden; position: absolute;" width="0" height="0"
+                            xmlns="http://www.w3.org/2000/svg" version="1.1">
+                            <defs>
+                                <filter id="goo">
+                                    <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                                    <feColorMatrix in="blur" mode="matrix"
+                                        values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+                                    <feComposite in="SourceGraphic" in2="goo" operator="atop" />
+                                </filter>
+                            </defs>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <!-- CONTACT -->
+            <div class="contact-header">
+                <h2>hur du kontaktar oss</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="contact-main">
+                <div class="contact-text">
+                    <div class="mail">
+                        <h1>E-mail</h1>
+                        <div class="underline-content-email"></div>
+                        <span>ufwebb.se@gmail.com</span>
+                    </div>
+                    <div class="phone">
+                        <h1>telefon</h1>
+                        <div class="underline-content-phone"></div>
+                        <span>0723581441</span>
+                    </div>
+                </div>
+                <img class="contact-svg" src="./svg-img/undraw_contact_us_15o2.svg" alt="">
+            </div>
+            </div>
+            </div>
+        
+        <div class="footer">
+            <div class="footer-packets">
+                <span>pakteten</span>
+                <div class="underline-footer"></div>
+                <a href="">standard</a>
+                <a id="middle" href="">mellan</a>
+                <a href="">exklusive</a>
+            </div>
+            <div class="footer-social">
+                <span>sociala medier</span>
+                <div class="underline-footer"></div>
+                <i class="fab fa-instagram"></i>
+            </div>
+            <div class="footer-contact">
+                <span>kontakta oss</span>
+                <div class="underline-footer"></div>
+                <a id="footer-contact-email" onclick="scrollContact()">e-mail</a>
+                <a id="footer-contact-phone" onclick="scrollContact()">telefon</a>
+            </div>
+        </div>
+        <script src="./script.js"></script>
+</body>
+
+</html>
