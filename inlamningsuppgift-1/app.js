@@ -1,33 +1,52 @@
 const input = document.querySelector("#input");
 const div = document.querySelector("#text");
-const btn = document.querySelector("#button");
+const addBtn = document.querySelector("#button");
 const ul = document.querySelector("ul");
-const btn2 = document.querySelector("#fast-track")
+const fastBtn = document.querySelector("#fast-track");
+const delBtn = document.querySelector("#del-btn");
 
 array = [];
 
-btn.addEventListener("click", function () {
-    var inputValue = input.value;
-    var li = document.createElement("li");
-    ul.appendChild(li);
+addBtn.addEventListener("click", function () {  
+    var inputValue = input.value
     array.push(inputValue);
-    li.innerHTML = inputValue;
-    //rensa input fält
-    input.value = "";   
-    console.log(array);
+    ul.innerHTML = "";
+    for (var i = 0; i < array.length; i++) {
+        var li = document.createElement('li');
+        li.appendChild(document.createTextNode(array[i]));
+        ul.appendChild(li);
+    }
+ })
+
+fastBtn.addEventListener("click", function () {
+    var inputValue = input.value
+    array.unshift(inputValue);
+    ul.innerHTML = "";
+    for (var i = 0; i < array.length; i++) {
+        var li = document.createElement('li');
+        li.appendChild(document.createTextNode(array[i]));
+        ul.appendChild(li);
+    }
 })
 
-btn2.addEventListener("click", function () {
-    var inputValue = input.value;
-    var li = document.createElement("li");
-    ul.appendChild(li);
-    array.unshift(inputValue);
-    li.innerHTML = inputValue;
-    li.remove();
-    li.innerHTML = inputValue;
-    //rensa input fält
-    input.value = "";   
+delBtn.addEventListener("click", function () {    
+    array.shift();
     console.log(array);
+    ul.innerHTML = "";
+    for (var i = 0; i < array.length; i++) {
+        var li = document.createElement('li');
+        li.appendChild(document.createTextNode(array[i]));
+        ul.appendChild(li);
+    }
+    if (array.length == 0) {
+        ul.innerText = "ingen i kö";
+    }
 })
+    var li = document.createElement('ul');
+    ul.appendChild(li);
+if (array.length == 0) {
+    li.innerHTML = "ingen i kö"
+}
+
 
 
