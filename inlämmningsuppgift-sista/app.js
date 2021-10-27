@@ -93,7 +93,7 @@ btnRätta.addEventListener("click", function () {
     if(radio.value === "aik" && radio.checked) {
       rätta++;
     }
-    
+       //fråga 10
   }
   for (var i = 0; i < qst10.length; i++) {
     var radio = qst10[i];
