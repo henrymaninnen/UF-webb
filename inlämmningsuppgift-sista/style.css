@@ -3,6 +3,12 @@
     background-color: black;
     color: white;
 }
+.container{
+    margin: 1rem;
+}
+#rätta{
+    margin: 2rem 0rem 0rem 0rem;
+}
 p{
     font-size: 1.4rem;
 }
